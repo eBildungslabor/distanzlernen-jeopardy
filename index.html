@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@1.5.5/css/pico.min.css">
+    <title>Distanzlernen-Jeopardy</title>
+    <style>
+        .jeopardy-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1rem;
+            text-align: center;
+        }
+        .jeopardy-cell {
+            padding: 1rem;
+            background-color: var(--primary);
+            color: white;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+        .jeopardy-cell:hover {
+            transform: scale(1.05);
+            background-color: var(--secondary);
+        }
+        .jeopardy-header {
+            background-color: var(--secondary);
+            color: white;
+            font-weight: bold;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+    <main class="container">
+        <h1>Distanzlernen Jeopardy</h1>
+        <p>Wählt die Felder aus, die für euch besonders interessant sind!</p>
+        <div class="jeopardy-grid">
+            <!-- Kategorien -->
+            <div class="jeopardy-header">Digitale Tools</div>
+            <div class="jeopardy-header">Lernformate</div>
+            <div class="jeopardy-header">Ideen mit KI</div>
+            <div class="jeopardy-header">Internetquatsch</div>
+
+            <!-- Felder (Platzhalter) -->
+            <div class="jeopardy-cell">Begriff 1</div>
+            <div class="jeopardy-cell">Begriff 1</div>
+            <div class="jeopardy-cell">Begriff 1</div>
+            <div class="jeopardy-cell">Begriff 1</div>
+
+            <div class="jeopardy-cell">Begriff 2</div>
+            <div class="jeopardy-cell">Begriff 2</div>
+            <div class="jeopardy-cell">Begriff 2</div>
+            <div class="jeopardy-cell">Begriff 2</div>
+
+            <div class="jeopardy-cell">Begriff 3</div>
+            <div class="jeopardy-cell">Begriff 3</div>
+            <div class="jeopardy-cell">Begriff 3</div>
+            <div class="jeopardy-cell">Begriff 3</div>
+
+            <div class="jeopardy-cell">Begriff 4</div>
+            <div class="jeopardy-cell">Begriff 4</div>
+            <div class="jeopardy-cell">Begriff 4</div>
+            <div class="jeopardy-cell">Begriff 4</div>
+        </div>
+        <p>Viel Freude und Erfolg! 🙂</p>
+    </main>
+    <footer class="container">
+        <small>
+            Konzipiert und erstellt für die bundesweite Fortbildungstagung der Bereichslehrkräfte von <a href="https://ebildungslabor.de">Nele (eBildungslabor)</a> •
+            Lizenz: <a href="https://creativecommons.org/publicdomain/zero/1.0/deed.de">CC0 1.0</a>
+        </small>
+    </footer>
+</body>
+</html>
