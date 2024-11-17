@@ -1,63 +1,79 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="de">
 
 <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="simple.css" rel="stylesheet">
-    <title>Erkundungen zu KI</title>
+    <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@1.5.5/css/pico.min.css">
+    <title>Unterrichtsvorbereitung</title>
 </head>
 
 <body>
-    <header>
-        <h1>Erkundungen zu Künstlicher Intelligenz (KI)</h1>
-        <p>Stationen zum individuellen oder gemeinsamen Erkunden</p>
-        <nav>
+    <main class="container">
+        <p><a href="index.html" role="button" class="secondary"><- Zurück zur Hauptseite</a></p>
+        <h1>Unterrichtsvorbereitung</h1>
+
+        <section>
+            <h2>Worum geht es hier?</h2>
+            <p>
+                An dieser Station geht es darum, wie KI-Sprachmodelle bei der Vorbereitung von Unterricht unterstützen können.
+            </p>
+        </section>
+
+        <section>
+            <h2>Welche Informationen können wir nutzen?</h2>
+            <p>
+                KI-Sprachmodelle können dir zum Beispiel dabei helfen ...
+            </p>
             <ul>
-                <li><a href="index.html">Überblick</a></li>
+                <li>... Ideen zu generieren, wie du eine Unterrichtsstunde methodisch gestalten kannst.</li>
+                <li>... Texte in unterschiedlichen Schwierigkeitsstufen formulieren.</li>
+                <li>... einen Plan entwickeln, was wann im Laufe des Schuljahres behandelt werden soll.</li>
+                <li>... Selbstlernübungen zu unterschiedlichen Themen entwickeln.</li>
+                <li>... deine Texte korrigieren.</li>
+                <li>... Ideen für Klausurfragen entwickeln, die bestimmten Ansprüchen genügen.</li>
             </ul>
-        </nav>
-    </header>
+            <p>
+                Besonders hilfreich ist die Möglichkeit, dass ein KI-Sprachmodell einen Inhalt in einem von dir vorgegebenen Format ausgeben kann. 
+                Das kannst du zum Beispiel nutzen, um Selbstlernübungen mit H5P zu erstellen. (H5P ist ein Tool zur Generierung interaktiver Online-Selbstlernübungen. 
+                Es ist zum Beispiel in Moodle integriert.)
+            </p>
+            <p>
+                Um mithilfe von KI-Tools H5P-Übungen zu erstellen, stellst du bei Inhaltstypen wie z. B. Single Choice Set oder Lückentext auf Eingabe als Text um, 
+                siehst dann, in welchem Format die Eingabe benötigt wird und kannst Übungsaufgaben genau in diesem Format bei einem KI-Sprachmodell 
+                zu einem von dir gewählten Thema als Output anfordern.
+            </p>
+        </section>
 
-    <main>
-        <h2>Station 3: Unterrichtsvorbereitung</h2>
+        <section>
+            <h2>Beispiel für die Erstellung von H5P-Übungen</h2>
+            <p>
+                Im folgenden Mini-Kurs ist das Vorgehen detailliert gezeigt. Als Beispiel wird hier die Erstellung von Selbstlernübungen zu einem Video gezeigt:
+            </p>
+            <iframe src="https://ebildungslabor.de/wp-admin/admin-ajax.php?action=h5p_embed&id=238" width="558" height="791" frameborder="0" allowfullscreen="allowfullscreen" title="H5P-Aufgaben mit KI"></iframe>
+            <script src="https://ebildungslabor.de/wp-content/plugins/h5p/h5p-php-library/js/h5p-resizer.js" charset="UTF-8"></script>
+        </section>
 
-        <h3>Worum geht es hier?</h3>
-        <p>Diese Station beschäftigt sich damit, wie KI-Sprachmodelle in der Vorbereitung von Unterricht unterstützen können. Dabei wird gezeigt, wie KI als hilfreiches Werkzeug für verschiedene Aufgaben genutzt werden kann.</p>
+        <section>
+            <h2>Weitere Ressourcen: Prompt-Bibliotheken</h2>
+            <p>
+                Es gibt bereits umfangreiche Sammlungen von Prompts, die als Inspiration dienen können:
+            </p>
+            <ul>
+                <li><a href="https://tools.fobizz.com/ai/mini_tools" target="_blank">Prompt-Sammlung von fobizz</a> (Fokus auf den schulischen Bereich)</li>
+                <li><a href="https://collab.dvb.bayern/display/TUMdidaktiki/Prompt+Bibliothek" target="_blank">Prompt-Sammlung der TUM</a> (Fokus Wissenschaft / Hochschule)</li>
+                <li><a href="https://docs.anthropic.com/de/prompt-library/library" target="_blank">Prompt-Bibliothek von Anthropic</a> - auch für andere Sprachmodelle nutzbar</li>
+            </ul>
+            <p>
+                Eine wirksame Strategie ist es auch, ein KI-Sprachmodell selbst nach guten Prompts zu fragen. 
+                Beschreibe deine spezifischen Herausforderungen möglichst genau, z. B.: „Was wären gute Prompts, die eine lehrende Person 
+                in der Erzieher*innenausbildung nutzen kann, die es mit sehr vielfältigen Lernenden zu tun hat, um ihren Unterricht besser zu machen?“ 
+                Das KI-Sprachmodell generiert dir dann gezielt Vorschläge.
+            </p>
+        </section>
 
-        <h3>Welche Möglichkeiten gibt es?</h3>
-        <p>KI-Sprachmodelle bieten zahlreiche Einsatzmöglichkeiten für die Unterrichtsvorbereitung, darunter:</p>
-        <ul>
-            <li>Ideenfindung für methodische Gestaltungsmöglichkeiten von Unterrichtsstunden.</li>
-            <li>Erstellung von Texten in unterschiedlichen Schwierigkeitsstufen.</li>
-            <li>Entwicklung von langfristigen Unterrichtsplänen, z. B. für ein Schuljahr.</li>
-            <li>Erstellen von Selbstlernmaterialien für verschiedene Themen.</li>
-            <li>Korrektur und Überarbeitung von eigenen Texten.</li>
-            <li>Generierung von Klausurfragen, die bestimmten Kriterien entsprechen.</li>
-        </ul>
-        <p>Besonders spannend ist die Möglichkeit, Inhalte in einem spezifischen Format zu generieren. Das kann genutzt werden, um etwa interaktive Übungen wie Lückentexte oder Quizfragen für digitale Tools vorzubereiten.</p>
-
-        <h3>Warum ist das sinnvoll?</h3>
-        <p>Der Einsatz von KI-Sprachmodellen kann in der Unterrichtsvorbereitung viele Vorteile bieten:</p>
-        <ul>
-            <li>**Zeitersparnis:** Routineaufgaben wie die Erstellung von Übungsmaterialien oder Klausurfragen können schneller erledigt werden.</li>
-            <li>**Kreativität fördern:** Neue Ideen für Methoden und Inhalte können durch die Anregungen der KI entstehen.</li>
-            <li>**Individuelle Anpassung:** Materialien können an die spezifischen Bedürfnisse von Lernenden angepasst werden.</li>
-            <li>**Flexibilität:** Die Möglichkeiten der KI erlauben es, viele verschiedene Formate und Anforderungen umzusetzen.</li>
-        </ul>
-
-        <h3>Wie könnten wir vorgehen?</h3>
-        <p>Probiert aus, wie KI-Sprachmodelle euch bei der Unterrichtsvorbereitung unterstützen können. Überlegt euch konkrete Aufgaben oder Herausforderungen und testet, welche Ergebnisse die KI liefert. Reflektiert, welche Ansätze für eure Arbeit besonders hilfreich sein könnten.</p>
-
-        <p>Viel Freude beim Erkunden der Möglichkeiten!</p>
-
-        <p><a href="index.html"><button>> Zur Übersicht der Stationen</button></a></p>
+        <p><a href="index.html" role="button" class="secondary"><- Zurück zur Hauptseite</a></p>
     </main>
-
-    <footer>
-        <p>Verantwortlich für diese Website ist Nele Hirsch (<a href="https://ebildungslabor.de">eBildungslabor</a>)</p>
-        <p>Die Inhalte bleiben auch nach Ablauf unserer Veranstaltung online und können gerne weiter genutzt werden.</p>
-    </footer>
 </body>
 
 </html>
