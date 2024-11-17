@@ -1,57 +1,96 @@
 <!DOCTYPE html>
 <html lang="de">
+
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@1.5.5/css/pico.min.css">
+    <style>
+        .embed-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            max-width: 100%;
+        }
+
+        .embed-container iframe,
+        .embed-container object,
+        .embed-container embed {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
     <title>Oncoo</title>
 </head>
+
 <body>
     <main class="container">
-        <a href="index.html" class="button">Zurück zur Hauptseite</a>
+        <p><a href="index.html" role="button" class="secondary"><- Zurück zur Hauptseite</a></p>
         <h1>Oncoo</h1>
-        
+
         <section>
             <h2>Worum geht es hier?</h2>
-            <p>Oncoo ist ein Tool für kooperatives Lernen und unterstützt Methoden wie Kartenabfrage, Helfersystem und Zielscheibe.</p>
+            <p>
+                Oncoo ist ein Tool für kooperatives Lernen und unterstützt Methoden wie Kartenabfrage, Helfersystem und Zielscheibe. 
+                Es erleichtert die Organisation von Lernprozessen und fördert die Zusammenarbeit in Gruppen.
+            </p>
         </section>
 
         <section>
             <h2>Was kannst du damit machen?</h2>
-              <p>Die pädagogischen Einsatzmöglichkeiten von Oncoo ergeben sich aus dem jeweils verwendeten Tool:</p>
-    <ul>
-        <li>
-            <strong>Kartenabfrage:</strong>
-            Die Lehrperson startet eine ‚virtuelle Pinnwand‘; die Lernenden können Karten beschriften und zur virtuellen Pinnwand senden. Gemeinsam können die Karten dann auch noch sortiert und strukturiert werden.
-        </li>
-        <li>
-            <strong>Helfer-System:</strong>
-            Dieses Tool ist im Wesentlichen eine Namensanzeige, die in einer Lerngruppe dabei unterstützen kann, dass sich Lernende untereinander helfen können. Lernende geben an, wenn sie mit einer bestimmten Aufgabe fertig sind. Sie werden dann als ‚Helfer-Personen‘ angezeigt. Wer bei der Bearbeitung stockt, kann diese um Hilfe fragen.
-        </li>
-        <li>
-            <strong>Lerntempoduett:</strong>
-            Lernende starten hier mit einer Einzelaufgabe und zeigen an, wenn sie diese fertig bearbeitet haben. Anschließend werden sie mit einer weiteren lernenden Person zusammengebracht, um die Lösung abzugleichen/ gemeinsam weiter daran zu arbeiten.
-        </li>
-        <li>
-            <strong>Placemat:</strong>
-            Hinter diesem Tool verbirgt sich die Tischdeckchen-Methode, bei der SchülerInnen wie in einer Art Gruppenpuzzle ihre Lernergebnisse zusammentragen. Im Rahmen von Oncoo wird hierzu eine Zeitangabe für die erste Think-Phase und die anschließende Gruppen-Phase ermöglicht. Die Lernenden geben erst einzeln ihre Lösungen ein, dann bekommen sie ihre Partnerinnen und Partner angezeigt und arbeiten mit diesen an einer Gruppenlösung. Im Plenum können sowohl Einzel- als auch Gruppenlösungen angezeigt werden.
-        </li>
-        <li>
-            <strong>Zielscheibe:</strong>
-            Mit diesem Tool wird eine virtuelle Zielscheibe für unterschiedliche Feedback-Aspekte gestaltet. Diese können individuell eingetragen werden. Die Schülerinnen und Schüler markieren mit einem virtuellen Klebepunkt, wie sehr bei den einzelnen Aspekten aus ihrer Sicht ins Schwarze getroffen wurde.
-        </li>
-    </ul>
-    <p><em>Ich selbst nutze Oncoo überwiegend zur Evaluation von Lernangeboten.</em></p>
-            <p>Auf der <a href="https://oncoo.de">oncoo.de</a> kannst du das Tool ausprobieren.</p>
+            <p>Die pädagogischen Einsatzmöglichkeiten von Oncoo ergeben sich aus den einzelnen Tools:</p>
+            <ul>
+                <li>
+                    <strong>Kartenabfrage:</strong>
+                    Starte eine virtuelle Pinnwand, auf der Lernende Ideen und Beiträge sammeln können. Diese lassen sich 
+                    anschließend sortieren und strukturieren.
+                </li>
+                <li>
+                    <strong>Helfer-System:</strong>
+                    Unterstütze Lernende dabei, sich gegenseitig zu helfen. Lernende, die Aufgaben abgeschlossen haben, 
+                    können sich als Helfer*innen markieren und anderen Unterstützung anbieten.
+                </li>
+                <li>
+                    <strong>Lerntempoduett:</strong>
+                    Ermögliche individuelles Arbeiten mit anschließendem Austausch. Nach Abschluss einer Einzelaufgabe 
+                    werden Lernende zusammengeführt, um Lösungen zu vergleichen und zu verbessern.
+                </li>
+                <li>
+                    <strong>Placemat:</strong>
+                    Nutze die Tischdeckchen-Methode, um individuelle und Gruppenlösungen zu kombinieren. Lernende 
+                    arbeiten zuerst allein und dann in Gruppen an einer gemeinsamen Lösung.
+                </li>
+                <li>
+                    <strong>Zielscheibe:</strong>
+                    Sammle Feedback mit einer virtuellen Zielscheibe. Lernende markieren auf einer Skala, wie gut 
+                    einzelne Aspekte ihrer Meinung nach umgesetzt wurden.
+                </li>
+            </ul>
+            <p>
+                <em>Ich selbst nutze Oncoo überwiegend zur Evaluation von Lernangeboten.</em>
+            </p>
+            <p>
+                Auf der <a href="https://oncoo.de" target="_blank" rel="noopener noreferrer">Oncoo-Website</a> kannst du das Tool ausprobieren.
+            </p>
         </section>
 
         <section>
             <h2>Wo erhalte ich weitere Informationen?</h2>
-            <p>Hier ist ein Screencast zur Erklärung.</p>
-            <p><iframe width="855" height="481" src="https://www.youtube.com/embed/BC-iRhk0mw8?list=PL3v2Bi9F9l0jMP4JoDe1su5XsmqPMAuro" title="Kurzvorstellung Oncoo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></p>
+            <p>Hier ist ein Screencast zur Erklärung:</p>
+            <div class="embed-container">
+                <iframe src="https://www.youtube.com/embed/BC-iRhk0mw8?list=PL3v2Bi9F9l0jMP4JoDe1su5XsmqPMAuro" 
+                        title="Kurzvorstellung Oncoo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
+                        encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+                </iframe>
+            </div>
         </section>
 
-        <a href="index.html" class="button">Zurück zur Hauptseite</a>
+        <p><a href="index.html" role="button" class="secondary"><- Zurück zur Hauptseite</a></p>
     </main>
 </body>
+
 </html>
