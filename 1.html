@@ -1,40 +1,81 @@
 <!DOCTYPE html>
 <html lang="de">
+
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@1.5.5/css/pico.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/pico.min.css">
+    <style>
+        .embed-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            max-width: 100%;
+        }
+
+        .embed-container iframe,
+        .embed-container object,
+        .embed-container embed {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
     <title>Alleskönner Etherpad</title>
 </head>
+
 <body>
     <main class="container">
-        <a href="index.html" class="button">Zurück zur Hauptseite</a>
+        <a href="index.html" role="button" class="secondary">Zurück zur Hauptseite</a>
         <h1>Alleskönner Etherpad</h1>
-        
+
         <section>
             <h2>Worum geht es hier?</h2>
-            <p>Das Etherpad ist ein Open-Source-Tool, mit dem Schüler*innen in Echtzeit gemeinsam Texte schreiben und bearbeiten können. Es ist einfach zu bedienen und erfordert keine Anmeldung.</p>
+            <p>
+                Das Etherpad ist ein Open-Source-Tool, mit dem Schüler*innen in Echtzeit gemeinsam Texte schreiben und
+                bearbeiten können. Es ist intuitiv zu bedienen, plattformunabhängig und erfordert keine Anmeldung. 
+                So wird kollaboratives Arbeiten vereinfacht und gefördert.
+            </p>
         </section>
 
         <section>
             <h2>Was kannst du damit machen?</h2>
-            <p>Das Etherpad lässt sich zum Lehren und Lernen sehr vielseitig einsetzen. Hier sind ein paar Vorschläge:</p>
-            <p><ul><li>Lasse Schülerinnen und schüler bei Input-Phasen kollaborativ mitschreiben. So gibt es eine gemeinsame Aufzeichnung für alle.</li>
-            <li>Gestalte Gruppenarbeiten über ein Etherpad: Schülerinnen und Schüler können hier ihre Inhalte eintragen und gemeinsam daran arbeiten.</li>
-            <li>Lasse Texte mit einem Peer-Feedback korrigieren: Die erste Person trägt etwas ein, die anderen Personen arbeiten daran weiter.</li></ul></p>
-            <p>Am besten probierst du das Etherpad direkt aus. Du kannst zum Beispiel die Website <a href="https://zumpad.zum.de"</a> verwenden.</p>
-        
+            <p>Das Etherpad lässt sich zum Lehren und Lernen vielseitig einsetzen. Hier sind einige Vorschläge:</p>
+            <ul>
+                <li>Lasse Schüler*innen bei Input-Phasen kollaborativ mitschreiben. So entsteht eine gemeinsame
+                    Aufzeichnung für alle.</li>
+                <li>Organisiere Gruppenarbeiten über ein Etherpad: Schüler*innen können hier ihre Inhalte eintragen und
+                    gemeinsam daran arbeiten.</li>
+                <li>Nutze Peer-Feedback: Eine Person trägt etwas ein, die anderen kommentieren und verbessern den Text.
+                </li>
+            </ul>
+            <p>
+                Am besten probierst du das Etherpad direkt aus. Zum Beispiel kannst du die Website 
+                <a href="https://zumpad.zum.de" target="_blank" rel="noopener noreferrer">ZUMpad</a> verwenden.
+            </p>
         </section>
 
         <section>
             <h2>Wo erhalte ich weitere Informationen?</h2>
-            <p>Hier ist ein <a href="https://ebildungslabor.de/blog/padmethoden/">Blogbeitrag im eBildungslabor</a> dazu.</p>
+            <p>
+                Weitere Inspirationen findest du in diesem 
+                <a href="https://ebildungslabor.de/blog/padmethoden/" target="_blank" rel="noopener noreferrer">
+                    Blogbeitrag im eBildungslabor</a>.
+            </p>
             <p>Und hier ein Screencast:</p>
-            <p><iframe width="855" height="481" src="https://www.youtube.com/embed/KptxfxGV678?list=PL3v2Bi9F9l0jMP4JoDe1su5XsmqPMAuro" title="Kurzvorstellung Etherpad" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></p>
+            <div class="embed-container">
+                <iframe src="https://www.youtube.com/embed/KptxfxGV678?list=PL3v2Bi9F9l0jMP4JoDe1su5XsmqPMAuro" 
+                        title="Kurzvorstellung Etherpad" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
+                        encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+                </iframe>
+            </div>
         </section>
 
-        <a href="index.html" class="button">Zurück zur Hauptseite</a>
+        <a href="index.html" role="button" class="secondary">Zurück zur Hauptseite</a>
     </main>
 </body>
-</html>
 
+</html>
