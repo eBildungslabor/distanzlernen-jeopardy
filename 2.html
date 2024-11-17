@@ -1,38 +1,80 @@
 <!DOCTYPE html>
 <html lang="de">
+
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@1.5.5/css/pico.min.css">
+    <style>
+        .embed-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            max-width: 100%;
+        }
+
+        .embed-container iframe,
+        .embed-container object,
+        .embed-container embed {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
     <title>Brainstorming mit Mindwendel</title>
 </head>
+
 <body>
     <main class="container">
-        <a href="index.html" class="button">Zurück zur Hauptseite</a>
+        <p><a href="index.html" role="button" class="secondary"><- Zurück zur Hauptseite</a></p>
         <h1>Brainstorming mit Mindwendel</h1>
-        
+
         <section>
             <h2>Worum geht es hier?</h2>
-            <p>Mindwendel ist ein Brainstorming-Tool, das Ideen sammeln, kategorisieren und priorisieren lässt. Es ist ideal für kreative Unterrichtsphasen.</p>
+            <p>
+                Mindwendel ist ein Brainstorming-Tool, das es ermöglicht, Ideen zu sammeln, zu kategorisieren und zu priorisieren. 
+                Es ist ideal für kreative Unterrichtsphasen und fördert das gemeinsame Arbeiten an neuen Konzepten.
+            </p>
         </section>
 
         <section>
             <h2>Was kannst du damit machen?</h2>
-            <p>Mindwendel kann sehr vielfältig zum Lernen und Lehren eingesetzt werden. Hier sind ein paar Möglichkeiten:</p>
-            <ul><li>Lasse zum Einstieg in ein Thema darüber brainstormen, was Schülerinnen und Schüler mit dem Thema verbinden. Gemeinsam können die Beitrage dann kategorisiert werden.</li>
-            <li>Nutze Mindwendel, um Fragen eintragen zu lassen. Am Ende einer Lerneinheit können dann alle gesammelten Fragen beantwortet werden.</li>
-                <li>Lasse Schülerinnen und schüler eigensträndig Ideen und aspekte zu einem Thema sammeln - und dann passende Kategorien finden, nach denen sie einsortiert werden können.</li>
+            <p>Mindwendel kann vielseitig im Lern- und Lehrkontext eingesetzt werden. Hier einige Ideen:</p>
+            <ul>
+                <li>
+                    Starte in ein neues Thema, indem die Schüler*innen brainstormen, was sie damit verbinden. 
+                    Die gesammelten Beiträge können anschließend gemeinsam kategorisiert werden.
+                </li>
+                <li>
+                    Lasse Schüler*innen Fragen zu einem Thema eintragen. Am Ende der Lerneinheit können die gesammelten Fragen
+                    beantwortet und diskutiert werden.
+                </li>
+                <li>
+                    Fördere eigenständiges Arbeiten, indem Schüler*innen Ideen und Aspekte zu einem Thema sammeln. 
+                    Anschließend können passende Kategorien gefunden und die Einträge einsortiert werden.
+                </li>
             </ul>
-            <p>Du kannst das Tool unter <a href="https://idea.kits.blog/">diesem Link</a> direkt ausprobieren.</p>
+            <p>
+                Du kannst das Tool unter <a href="https://idea.kits.blog/" target="_blank" rel="noopener noreferrer">diesem Link</a> direkt ausprobieren.
+            </p>
         </section>
 
         <section>
             <h2>Wo erhalte ich weitere Informationen?</h2>
             <p>Hier ist ein Screencast zur Nutzung:</p>
-<p><iframe width="560" height="315" src="https://www.youtube.com/embed/7RjeNF4afeA?si=uwUWAmvEMcrJ_rCH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></p>
+            <div class="embed-container">
+                <iframe src="https://www.youtube.com/embed/7RjeNF4afeA?si=uwUWAmvEMcrJ_rCH" 
+                        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
+                        encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+                </iframe>
+            </div>
         </section>
 
-        <a href="index.html" class="button">Zurück zur Hauptseite</a>
+        <p><a href="index.html" role="button" class="secondary"><- Zurück zur Hauptseite</a></p>
     </main>
 </body>
+
 </html>
