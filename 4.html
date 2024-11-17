@@ -1,33 +1,89 @@
 <!DOCTYPE html>
 <html lang="de">
+
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@1.5.5/css/pico.min.css">
+    <style>
+        .embed-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            max-width: 100%;
+        }
+
+        .embed-container iframe,
+        .embed-container object,
+        .embed-container embed {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
     <title>Interaktive Übungen mit H5P</title>
 </head>
+
 <body>
     <main class="container">
-        <a href="index.html" class="button">Zurück zur Hauptseite</a>
+        <p><a href="index.html" role="button" class="secondary"><- Zurück zur Hauptseite</a></p>
         <h1>Interaktive Übungen mit H5P</h1>
-        
+
         <section>
             <h2>Worum geht es hier?</h2>
-            <p>Mit H5P kannst du interaktive Inhalte erstellen, wie Quizze, Videos, Präsentationen und vieles mehr, die sich ideal für den Unterricht eignen.</p>
+            <p>
+                Mit H5P kannst du interaktive Inhalte erstellen, wie Quizze, Videos, Präsentationen und vieles mehr. 
+                Diese Inhalte sind ideal für den Unterricht geeignet und können direkt im Browser erstellt und genutzt werden.
+                H5P ist besonders beliebt für den Einsatz in Lernplattformen wie Moodle, WordPress oder OpenOlat.
+            </p>
         </section>
 
         <section>
             <h2>Was kannst du damit machen?</h2>
-            <p>Die Möglichkeiten mit H5P zu arbeiten, sind super vielfältig. Am meisten wird H5P genutzt, um für Lernende Selbstlernübungen zu erstellen. Es gibt aber auch spielerische Angebote, wie z.B. einen Adventskalender oder ein Branching Scenario. Am besten schaust du dich auf <a href="https://ebildungslabor.github.io/H5P/">dieser Website</a> um, um einen Überlick zu erhalten.</p>
+            <p>
+                Die Möglichkeiten, mit H5P zu arbeiten, sind äußerst vielfältig. Hier sind einige Ideen:
+            </p>
+            <ul>
+                <li>
+                    <strong>Selbstlernübungen:</strong> Erstelle interaktive Inhalte, wie Multiple-Choice-Tests, Drag-and-Drop-Aufgaben oder 
+                    interaktive Videos, die Lernende eigenständig bearbeiten können.
+                </li>
+                <li>
+                    <strong>Flipped Classroom:</strong> Nutze H5P, um Lerninhalte für Flipped-Classroom-Phasen aufzubereiten. 
+                    Lernende können so vor dem Unterricht wichtige Inhalte erarbeiten und aktiv darauf vorbereitet werden.
+                </li>
+                <li>
+                    <strong>Kreative Projekte:</strong> Mit Tools wie dem Branching Scenario kannst du interaktive Geschichten erstellen 
+                    oder Entscheidungsprozesse simulieren. Spielerische Inhalte wie Adventskalender bieten ebenfalls kreative Möglichkeiten.
+                </li>
+                <li>
+                    <strong>Remix und Wiederverwendung:</strong> Bereits existierende H5P-Inhalte lassen sich leicht remixen und an deine 
+                    eigenen Bedürfnisse anpassen. Dies spart Zeit und fördert den Austausch von Ideen.
+                </li>
+            </ul>
+            <p>
+                Am besten schaust du dich auf 
+                <a href="https://ebildungslabor.github.io/H5P/" target="_blank" rel="noopener noreferrer">
+                    dieser Website</a> um, um einen Überblick zu erhalten und Inspirationen zu sammeln.
+            </p>
         </section>
 
         <section>
             <h2>Wo erhalte ich weitere Informationen?</h2>
             <p>Hier ist ein Video zum Einstieg:</p>
-            <p><iframe width="560" height="315" src="https://www.youtube.com/embed/6OD2tOq-57U?si=PTlq7X38hnAjp3Qo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></p>
+            <div class="embed-container">
+                <iframe src="https://www.youtube.com/embed/6OD2tOq-57U?si=PTlq7X38hnAjp3Qo" 
+                        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
+                        encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+                </iframe>
+            </div>
         </section>
 
-        <a href="index.html" class="button">Zurück zur Hauptseite</a>
+        <p><a href="index.html" role="button" class="secondary"><- Zurück zur Hauptseite</a></p>
     </main>
 </body>
+
 </html>
